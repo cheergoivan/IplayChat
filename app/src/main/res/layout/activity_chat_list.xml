@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_chat_list"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ChatListActivity">
+
+    <!--
+
+    <TextView
+        android:id="@+id/activity_chat_list_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_default"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/activity_chat_list"
+        app:layout_constraintStart_toStartOf="@id/activity_chat_list"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <ImageView
+        android:id="@+id/activity_chat_list_header_btn_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/back_32px"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_margin_top"
+        android:layout_marginStart="@dimen/default_margin_left" />
+
+    <ImageView
+        android:id="@+id/activity_chat_list_header_btn_search"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/search"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+
+        <View
+            android:id="@+id/activity_chat_list_header_divider"
+            android:layout_height="1dp"
+            android:layout_width="0dp"
+            android:background="@color/grey"
+            app:layout_constraintTop_toTopOf="@+id/activity_chat_list_header_title"
+            android:layout_marginTop="@dimen/header_divider_margin_top"
+             />
+
+    -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_primary"
+        >
+
+        <ImageView
+            android:id="@+id/activity_chat_list_header_btn_logout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:src="@drawable/logout1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Iplay"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/activity_chat_list_header_btn_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:src="@drawable/search2"
+            android:layout_marginRight="14dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_chat_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+         />
+
+</LinearLayout>
